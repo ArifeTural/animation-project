@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: cover;
+    overflow: hidden;
+
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.bg{
+    background-image: url(images/bg.jpg);
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 1;
+}
+
+
+
+.trees{
+    background-image: url(images/trees.png);
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    z-index: 3;
+    position: absolute;
+}
+
+.leaf{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 5;
+    background-repeat: no-repeat;
+    animation: yaprak 4s linear  infinite;
+}
+
+.leaf1{
+    background-image: url(images/leaf_01.png);
+    background-position: 5% -10px;
+
+    
+}
+.leaf2{
+background-image: url(images/leaf_02.png);
+background-position: 20% 10px ;
+animation-delay: 1s;
+}
+.leaf3{
+background-image: url(images/leaf_03.png);
+background-position: 35% -10px ;
+animation-delay: 2s;
+}
+.leaf4{
+background-image: url(images/leaf_04.png);
+background-position: 50% 10px ;
+animation-delay: 3s;
+}
+.leaf5{
+background-image: url(images/leaf_01.png);
+background-position: 70% -10px;
+animation-delay: 4s;
+}
+.leaf6{
+background-image: url(images/leaf_02.png);
+background-position:80% 10px ;
+animation-delay: 5s;
+}
+.leaf7{
+background-image: url(images/leaf_04.png);
+background-position:90% 10px ;
+animation-delay: 6s;
+}
+
+.girl{
+    background-image: url(images/girl.png);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-size: 20% 40%;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: right;
+    animation: bisiklet 9s linear infinite;
+}
+
+.content{
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    height: 250px;
+    position: absolute;
+   text-align: center;
+   border:  2px solid rgba(178, 165, 165, 0.27);
+   backdrop-filter: blur(18px);
+   gap: 1rem;
+   padding: 1rem;
+   border-radius: 1rem;
+
+}
+
+input{
+    height: 35px;
+    width: 100%;
+    font-size: 16px;
+    color: #90281F;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 15px;
+}
+
+h1{
+    color: #90281F;
+}
+
+button{
+    color: white;
+   
+    background-color: brown;
+    height: 50px;
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.forget-sig{
+    display: flex;
+    justify-content: space-between;
+}
+.forget-sig a{
+    color: brown;
+}
+
+
+@keyframes yaprak {
+    0%{
+        transform: translateY(0);
+    }
+
+    100%{
+        transform: translateY(100%);
+    }
+    
+}
+
+@keyframes bisiklet {
+    0%{
+        transform: translateX(0%);
+
+    }
+
+    100%{
+        transform: translateX(-100%);
+
+    }
+    
+}
+
+
